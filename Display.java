@@ -6,6 +6,7 @@ public abstract class Display{
         if (created)
             return;
         window = new JFrame(title);
+        // comment
     }
 
 }
