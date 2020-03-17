@@ -1,3 +1,5 @@
+import java.awt.Canvas;
+import javax.swing.JFrame;
 public abstract class Display{
     private static boolean created = false;
     private static JFrame window;
@@ -6,6 +8,7 @@ public abstract class Display{
         if (created)
             return;
         window = new JFrame(title);
+        content = new Canvas();
         // comment
     }
 
