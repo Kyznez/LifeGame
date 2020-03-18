@@ -9,6 +9,14 @@ public abstract class Display{
             return;
         window = new JFrame(title);
         content = new Canvas();
+        Dimension size = new Dimension(width, height);
+        content.setPreferredSize(size);
+        window.setResizable(false);
+        window.getContentPane().add(content);
+        window.pack();
+
+
+
         // comment
     }
 
